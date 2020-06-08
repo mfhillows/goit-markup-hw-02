@@ -1,0 +1,253 @@
+/* цвет основного фона #E5E5E5 */
+/* цвет фона карточек #F5F4FA */
+/* цвет фона хедера #FFFFFF */
+/* цвет фона футера #2F303A */
+
+/* Первичный чёрный цвет текста #212121 */
+/* Вторичный чёрный цвет текста #757575 */
+/* Цвет белого текста #FFFFFF  */
+/* Цвет копипаста, тел и почты футера #C4C4C4 */
+/* Цвет акцента #2196F3 */
+
+:root {
+  --primary-body-color: #e5e5e5;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-color: #ffffff;
+  --accent-color: #2196f3;
+  --copypast-color: #c4c4c4;
+  --footer-color: #2f303a;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-body-color);
+  color: var(--primary-text-color);
+}
+/* header {
+  background-color: var(--white-color);
+}*/
+
+/* footer {
+  background-color: var(--footer-color);
+} */
+
+.list {
+  list-style: none;
+}
+
+/* Хедер */
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+
+.blue-logo {
+  color: #000000;
+}
+
+.links,
+.logo {
+  text-decoration: none;
+}
+
+.site-nav .links {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.site-nav .links:hover,
+.site-nav .links:focus {
+  color: var(--accent-color);
+}
+.post-call .links {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.post-call .links:hover,
+.post-call .links:focus {
+  color: var(--accent-color);
+}
+
+/* Герой */
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--white-color);
+  color: var(--accent-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: crimson;
+  color: var(--white-color);
+}
+
+/* Основное */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.advantage .smalltitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.competence .smalltitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: crimson;
+  color: var(--white-color);
+}
+
+.competence .smalltitle:hover,
+.competence .smalltitle:focus {
+  color: var(--accent-color);
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.our-force {
+  color: var(--secondary-text-color);
+}
+
+.names {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+/* Футер */
+
+.logo-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+
+.white-logo {
+  color: var(--white-color);
+}
+
+.city-adress {
+  color: var(--white-color);
+}
+
+.footer-contacts {
+  color: var(--copypast-color);
+}
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent-color);
+}
+
+.social-links .smalltitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.developers {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+}
+
+/* .social-link-title {
+  background-color: var(--copypast-color);
+}
+
+.social-link-title:hover,
+.social-link-title:focus {
+  background-color: var(--accent-color);
+} */
+
+/* PORTFOLIO */
+
+.button-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background-color: var(--copypast-color);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.card-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
+}
+
+.text-inside {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--white-color);
+}
