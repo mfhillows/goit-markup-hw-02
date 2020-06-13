@@ -1,50 +1,38 @@
-/* цвет основного фона #E5E5E5 */
-/* цвет фона карточек #F5F4FA */
-/* цвет фона хедера #FFFFFF */
-/* цвет фона футера #2F303A */
-
-/* Первичный чёрный цвет текста #212121 */
-/* Вторичный чёрный цвет текста #757575 */
-/* Цвет белого текста #FFFFFF  */
-/* Цвет копипаста, тел и почты футера #C4C4C4 */
-/* Цвет акцента #2196F3 */
-
 :root {
   --primary-body-color: #e5e5e5;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --white-color: #ffffff;
+  --blue-color: #2196f3;
   --accent-color: #2196f3;
   --copypast-color: #c4c4c4;
-  --footer-color: #2f303a;
+  --footer-body-color: #2f303a;
+  --card-body-color: #f5f4fa;
+  --header-body-color: #ffffff;
 }
 
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  background-color: var(--primary-body-color);
   color: var(--primary-text-color);
 }
-/* header {
-  background-color: var(--white-color);
-}*/
 
-/* footer {
-  background-color: var(--footer-color);
-} */
+footer {
+  background-color: var(--footer-body-color);
+}
 
 .list {
   list-style: none;
 }
 
-/* Хедер */
+/* Header*/
 
 .logo {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: var(--accent-color);
+  color: var(--blue-color);
 }
 
 .blue-logo {
@@ -68,6 +56,12 @@ body {
 .site-nav .links:focus {
   color: var(--accent-color);
 }
+
+.site-nav .current-studio,
+.site-nav .current-portfolio {
+  color: var(--accent-color);
+}
+
 .post-call .links {
   font-weight: 500;
   font-size: 14px;
@@ -81,14 +75,14 @@ body {
   color: var(--accent-color);
 }
 
-/* Герой */
+/* Hero */
 
 .button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
+  background-color: var(--blue-color);
   color: var(--white-color);
 }
 
@@ -109,7 +103,7 @@ body {
   color: var(--white-color);
 }
 
-/* Основное */
+/* Main */
 
 .section-title {
   font-weight: 700;
@@ -167,14 +161,14 @@ body {
   color: var(--secondary-text-color);
 }
 
-/* Футер */
+/* Footer */
 
 .logo-footer {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: var(--accent-color);
+  color: var(--blue-color);
 }
 
 .white-logo {
@@ -193,12 +187,29 @@ body {
   color: var(--accent-color);
 }
 
-.social-links .smalltitle {
+.social-links .smalltitle,
+.subscription-call {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-color);
+}
+
+.button-subscription {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.button-subscription:hover,
+.button-subscription:focus {
+  background-color: var(--white-color);
+  color: var(--accent-color);
 }
 
 .developers {
@@ -207,15 +218,6 @@ body {
   line-height: 2;
   text-align: center;
 }
-
-/* .social-link-title {
-  background-color: var(--copypast-color);
-}
-
-.social-link-title:hover,
-.social-link-title:focus {
-  background-color: var(--accent-color);
-} */
 
 /* PORTFOLIO */
 
