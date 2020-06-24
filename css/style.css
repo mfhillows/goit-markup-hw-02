@@ -1,19 +1,25 @@
 :root {
-  --primary-body-color: #e5e5e5;
+  --primary-body-color: #ffffff;
+  --secondary-body-color: rgba(47, 48, 58, 0.8);
+  --tertiary-body-color: #f5f4fa;
+  --header-body-color: #ffffff;
+  --footer-body-color: #2f303a;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --white-color: #ffffff;
   --blue-color: #2196f3;
   --accent-color: #2196f3;
   --copypast-color: #c4c4c4;
-  --footer-body-color: #2f303a;
-  --card-body-color: #f5f4fa;
-  --header-body-color: #ffffff;
+}
+
+header {
+  background-color: var(--header-body-color);
 }
 
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  background-color: var(--primary-body-color);
   color: var(--primary-text-color);
 }
 
@@ -77,6 +83,10 @@ footer {
 
 /* Hero */
 
+.hero-section {
+  background-color: var(--secondary-body-color);
+}
+
 .button {
   font-weight: 700;
   font-size: 16px;
@@ -99,7 +109,6 @@ footer {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: crimson;
   color: var(--white-color);
 }
 
@@ -111,6 +120,12 @@ footer {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.advantage-image {
+  width: 270px;
+  height: 120px;
+  background: var(--tertiary-body-color);
 }
 
 .advantage .smalltitle {
@@ -127,13 +142,17 @@ footer {
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
-  background-color: crimson;
+  background-color: var(--secondary-body-color);
   color: var(--white-color);
 }
 
 .competence .smalltitle:hover,
 .competence .smalltitle:focus {
   color: var(--accent-color);
+}
+
+.team {
+  background-color: var(--tertiary-body-color);
 }
 
 .text {
